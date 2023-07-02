@@ -25,9 +25,8 @@ a {
 }
 
 /*nav*/
-nav .socials {
-    
-    height: 45px;
+nav .socials {    
+    height: 35px;
     width: auto;
     display: flex;
     justify-content: flex-end;
@@ -40,3 +39,32 @@ nav .socials img {
     width: auto;
     filter: invert(100%);
 }
+
+nav .mainNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+nav .mainNav h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+nav .mainNav img {
+    height: 30px;
+    width: auto;
+    filter: invert(100%);
+}
+
+nav .mainNav div ul {
+    display: flex;
+}
+header {
+    height: 300px;
+    /*overflow: hidden;*/
+    background-image: url(./assets/images/pics/banner.webp);
+    background-size: cover;
+    background-position: center;
+}
+
