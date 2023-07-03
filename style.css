@@ -51,6 +51,12 @@ nav .mainNav h1 {
     text-transform: uppercase;
     font-size: 30px;
 }
+
+nav .mainNav .pc {
+    display: flex ;
+
+}
+
 nav .mainNav img {
     height: 30px;
     width: auto;
@@ -62,9 +68,148 @@ nav .mainNav div ul {
 }
 header {
     height: 300px;
-    /*overflow: hidden;*/
     background-image: url(./assets/images/pics/banner.webp);
     background-size: cover;
     background-position: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2 {
+    text-transform: uppercase;
+    
+    padding: 20px;
+}
+
+main ul {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+main ul li {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+main button {
+    
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--secondary);
+    margin: 20px;
+    text-transform: uppercase;
+    border:none;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing:3px;
+}
+
+main button:hover{
+    animation: colorButton 1s;
+}
+
+main .video {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid var(--secondary);
+}
+
+
+main .video iframe {
+    width: 100%;
+    height: 50vh;
+
+}
+
+main .video section {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    text-align: center;
+}
+
+main .video section p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+main .video section button {
+    
+    border: 1px solid white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+footer .right .pc {
+    display: none;
+}
+
+footer .socials {    
+    height: 35px;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 5px 70px;
+    gap: 8px;
+}
+
+footer .socials img {
+    height: 17px;
+    width: auto;
+    filter: invert(100%);
+}
+
+
+
+@keyframes colorButton {
+    from{
+        background-color: transparent;
+    }
+    to{
+        background-color: rgba(128, 128, 128, 0.219);
+    }
+    
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 40em) {
+    footer .right {
+        padding-top: 5px;
+        border-top: 1px solid rgba(255, 255, 255, 0.303);
+    }
+    nav .mainNav .pc {
+        display: none;
+    
+    }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {
+    nav .mainNav .pc {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-transform: uppercase;
+    }
+}
