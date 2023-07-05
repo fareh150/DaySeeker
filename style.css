@@ -26,6 +26,15 @@ body {
     color: var(--letter);
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+  }
+
 header > div .socials {
     display: none;
 }
@@ -277,6 +286,13 @@ main .video ul .textend {
     font-weight: 900;
     font-size: 2rem;
     letter-spacing:3px;
+    text-align: center;
+}
+@media only screen and (min-width: 75em){
+    main .video ul .textend{
+        font-size: 3rem ;
+        margin-bottom: 30px;
+    }
 }
 
 main .video ul .buttonend {
@@ -288,12 +304,7 @@ main .video ul .buttonend {
     word-spacing:4px;
 }
 
-main .principal ul li img {
-    filter: contrast(80%);
-}
-main .principal ul li img:hover{
-    filter: contrast(100%);
-}
+
 
 @media only screen and (min-width: 48em) {
 
@@ -314,7 +325,12 @@ main .principal ul li img:hover{
         grid-template-columns: repeat(4,1fr);
     }
 
-    
+    main .principal ul li img {
+        filter: contrast(80%);
+    }
+    main .principal ul li img:hover{
+        filter: contrast(100%);
+    }
 }
 
 footer section {
